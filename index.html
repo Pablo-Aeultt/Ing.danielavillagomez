@@ -1,119 +1,386 @@
 <!doctype html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Documento principal de la landing page personal de Daniela Villagómez -->
-  <title>Daniela Villagómez — propuestas web</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-
-  <!-- Contenedor principal de la página. El nombre de la clase cambia para alternar temas visuales -->
-  <main id="site" class="isallabs">
-    <!-- Navegación principal -->
-    <nav class="nav">
-      <a class="brand" href="#inicio">DV<span>.</span></a>
-      <div class="nav-links"><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div>
-      <a class="circle-link" href="#contacto" aria-label="Ir a contacto">↗</a>
-    </nav>
-
-    <!-- Sección hero: presentación personal y mensaje principal -->
-    <section class="hero" id="inicio">
-      <div class="hero-copy">
-        <p class="eyebrow">PORTAFOLIO PERSONAL · 2026</p>
-        <h1>Ingeniería que<br><em>construye.</em></h1>
-        <p class="intro">Daniela Villagómez Castro desarrolla proyectos hidráulicos e hidrosanitarios que convierten la complejidad técnica en espacios seguros y eficientes.</p>
-        <a class="cta" href="#proyectos">Conoce mi trabajo <span>↓</span></a>
-      </div>
-      <div class="portrait-wrap" aria-label="Espacio para fotografía de Daniela">
-        <div class="sun"></div><div class="portrait-shape"><img src="daniela-hero.jpeg" alt="Daniela Villagómez Castro" /></div>
-        <p>DISEÑO TÉCNICO<br>CON PROPÓSITO</p>
-      </div>
-      <div class="hero-note"><span>01</span><p>Una landing que transmite cercanía, criterio y una mirada contemporánea.</p></div>
-    </section>
-
-    <!-- Sección sobre mí y perfil profesional -->
-    <section class="about" id="sobre-mi">
-      <p class="section-label">SOBRE MÍ <span>— 01</span></p>
-      <div class="about-grid">
-        <h2>Diseño soluciones para que cada proyecto sea más <em>seguro.</em></h2>
-        <div><p>Ingeniera Civil · Fire Protection Designer · MEP Coordinator · Plumbing Designer · Site Engineer. Especialista en hidráulica, hidrosanitarios, BIM, Revit, AutoCAD y AutoSprink.</p><a href="#contacto" class="text-link">Hablemos de tu proyecto ↗</a></div>
-      </div>
-    </section>
-
-    <section class="services" id="servicios" aria-label="Servicios principales">
-      <div class="services-header">
-        <p class="section-label">SERVICIOS <span>— 02</span></p>
-        <h3>Soluciones técnicas con criterio, coordinación y visión de obra.</h3>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card">
-          <span class="service-number">01</span>
-          <h4>Hidráulica</h4>
-          <p>Dimensionamiento, redes, cálculos y diseño eficiente para proyectos habitacionales, comerciales y de infraestructura.</p>
-        </article>
-
-        <article class="service-card">
-          <span class="service-number">02</span>
-          <h4>Hidrosanitarios</h4>
-          <p>Soluciones de agua potable, drenaje, pluviales, piscinas y espacios de bienestar con enfoque operativo y práctico.</p>
-        </article>
-
-        <article class="service-card">
-          <span class="service-number">03</span>
-          <h4>BIM & coordinación</h4>
-          <p>Modelado, revisión técnica y coordinación entre disciplinas para evitar errores y mejorar la ejecución en obra.</p>
-        </article>
-      </div>
-
-      <div class="stats-strip">
-        <div class="stat-box">
-          <strong>+70</strong>
-          <span>proyectos</span>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Daniela Villagomez Castro is a Civil Engineer specializing in Plumbing, Fire Protection, BIM Modeling and MEP Coordination."
+    />
+    <title>
+      Daniela Villagomez Castro | Plumbing & Fire Protection Engineer
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="site">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#home">DV</a>
+        <div class="nav-links">
+          <a href="#profile">Profile</a><a href="#expertise">Expertise</a
+          ><a href="#projects">Projects</a><a href="#contact">Contact</a>
         </div>
-        <div class="stat-box">
-          <strong>100%</strong>
-          <span>enfoque técnico</span>
+        <a class="nav-status" href="#contact"
+          ><span></span> Available for projects</a
+        >
+        <div class="language-switch" aria-label="Language selector">
+          <button class="language-button active" data-language="en">ENGLISH</button>
+          <span>/</span>
+          <button class="language-button" data-language="es">ESPAÑOL</button>
         </div>
-        <div class="stat-box">
-          <strong>4</strong>
-          <span>áreas clave</span>
+      </nav>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow hero-meta">
+           
+        <span> Daniela Villagómez Castro - CIVIL ENGINEER / BIM COORDINATOR</span>
+          </p>
+          <h1>Systems that<br /><em>work together.</em></h1>
+          <p class="hero-intro">
+            Plumbing & Fire Protection Engineer specializing in BIM modeling and
+            multidisciplinary coordination for projects in Bolivia and the
+            United States.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projects"
+              >View projects <span>↘</span></a
+            ><a class="text-link" href="#profile"
+              >About Daniela <span>↘</span></a
+            >
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Grupo de proyectos y estudios de caso -->
-    <section class="projects" id="proyectos">
-      <div class="section-top"><p class="section-label">PROYECTOS <span>— 03</span></p><p>Trabajo reciente</p></div>
-      <div class="cards">
-        <article class="card card-one featured-case"><img class="project-image" src="project-1.jpg" alt="Modelo BIM de instalaciones del edificio Manzana 40"><span>01 / OBRA EJECUTADA · 2019—2021</span><h3>Manzana<br>40.</h3><p class="card-detail">Sistema de combate a incendios<br>+ coordinación BIM</p><button class="open-case" data-case="Edificio Manzana 40">Ver caso ↗</button></article>
-        <article class="card card-two"><img class="project-image" src="project-5.jpg" alt="Esquema de instalaciones y combate a incendios"><span>02 / SANITARIOS Y PLUVIALES</span><h3>Todo encaja<br>en obra.</h3><button class="open-case" data-case="Proyectos sanitarios y pluviales">Ver proyecto ↗</button></article>
-        <article class="card card-three"><img class="project-image" src="project-3.jpg" alt="Sistema de combate a incendios con gabinetes"><span>03 / EXTINCIÓN A INCENDIOS</span><h3>Seguridad<br>desde el plano.</h3><button class="open-case" data-case="Proyectos de extinción a incendios">Ver proyecto ↗</button></article>
-        <article class="card card-four"><img class="project-image" src="project-4.jpg" alt="Presentación de proyectos hidrosanitarios"><span>04 / PISCINAS E HIDROMASAJES</span><h3>Diseño para<br>disfrutar.</h3><button class="open-case" data-case="Proyectos de piscinas e hidromasajes">Ver proyecto ↗</button></article>
-      </div>
-    </section>
-
-    <!-- Cierre con llamada a la acción y contacto -->
-    <section class="contact" id="contacto">
-      <p class="section-label">CONTACTO <span>— 04</span></p>
-      <h2>¿Creamos algo<br><em>que importe?</em></h2>
-      <div class="contact-links">
-        <button class="contact-button" id="emailButton">danielavc0506@gmail.com <span>↗</span></button>
-        <a href="https://wa.me/59177019733" target="_blank" rel="noreferrer" class="contact-button">WhatsApp <span>↗</span></a>
-        <a href="https://www.linkedin.com/in/daniela-villagomez-castro/" target="_blank" rel="noreferrer" class="contact-button">LinkedIn <span>↗</span></a>
-      </div>
-      <footer><span>© 2026 DANIELA VILLAGÓMEZ</span></footer>
-    </section>
-  </main>
-
-  <!-- Modal que describe un caso de estudio seleccionado -->
-  <dialog id="dialog"><button class="close" aria-label="Cerrar">×</button><p class="eyebrow">PROYECTO SELECCIONADO</p><h2 id="dialogTitle">Caso de estudio</h2><p>Este panel representa una navegación a una página de proyecto. Aquí se podrían mostrar el desafío, proceso, resultados y testimonios.</p><a href="#contacto" id="dialogCta">Iniciar una conversación ↗</a></dialog>
-  <script src="script.js"></script>
-</body>
+        <div class="hero-visual">
+          <div class="visual-index">BOLIVIA <span>+</span> UNITED STATES</div>
+          <img src="daniela-hero.jpeg" alt="Daniela Villagomez Castro" />
+        </div>
+        <div class="hero-foot">
+          <span>PLUMBING</span><span>FIRE PROTECTION</span
+          ><span>BIM MODELING</span><span>MEP COORDINATION</span>
+        </div>
+      </section>
+      <section class="expertise" id="expertise">
+        <div class="section-heading">
+          <p class="eyebrow">AREAS OF EXPERTISE</p>
+          <h2>Engineering knowledge<br />behind every model.</h2>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <div class="card-icon">⌁</div>
+            <h3>Plumbing</h3>
+            <p>Systems designed for performance, access and buildability.</p>
+            <ul>
+              <li>Domestic water</li>
+              <li>Sanitary drainage</li>
+              <li>Vent & storm systems</li>
+              <li>Gas systems</li>
+            </ul>
+          </article>
+          <article class="expertise-card accent-card">
+            <div class="card-icon">✦</div>
+            <h3>Fire Protection</h3>
+            <p>Coordinated sprinkler systems shaped by engineering and code.</p>
+            <ul>
+              <li>Fire sprinkler systems</li>
+              <li>Hydraulic calculations</li>
+              <li>Risers & hose hydrants</li>
+              <li>NFPA-based design</li>
+            </ul>
+          </article>
+          <article class="expertise-card">
+            <div class="card-icon">▦</div>
+            <h3>BIM & Modeling</h3>
+            <p>
+              Clear models and documents that help teams build with confidence.
+            </p>
+            <ul>
+              <li>Revit & AutoCAD</li>
+              <li>Navisworks review</li>
+              <li>HydraCAD & AutoSPRINK</li>
+              <li>Construction documents</li>
+            </ul>
+          </article>
+          <article class="expertise-card">
+            <div class="card-icon">＋</div>
+            <h3>MEP Coordination</h3>
+            <p>
+              Resolving the space between disciplines before it reaches the
+              field.
+            </p>
+            <ul>
+              <li>Clash detection</li>
+              <li>Architecture & structure</li>
+              <li>HVAC & electrical</li>
+              <li>Sleeves & core drills</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="profile" id="profile">
+        <div class="profile-photo">
+          <img src="daniela-profile.jpg" alt="Daniela Villagomez at work" />
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">PROFESSIONAL PROFILE</p>
+          <p class="profile-name">Daniela Villagómez Castro</p>
+          <h2>
+            More than a modeler.<br /><em>An engineer who coordinates.</em>
+          </h2>
+          <p>
+            Civil Engineer with professional experience in Plumbing, Fire
+            Protection and MEP coordination across projects in Bolivia and the
+            United States.
+          </p>
+          <p>
+            My experience combines engineering design and construction with BIM
+            modeling and multidisciplinary coordination. In Bolivia, I developed
+            hydrosanitary and fire protection projects, hydraulic calculations,
+            construction execution and site supervision.
+          </p>
+          <p>
+            In the United States, I have specialized in BIM modeling and
+            coordination for Plumbing and Fire Protection systems, working with
+            Revit, AutoCAD and Navisworks on commercial, residential and
+            hospitality projects.
+          </p>
+          <blockquote>
+            “Not only correctly designed, but also coordinated and practical to
+            build.”
+          </blockquote>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <div class="experience-intro">
+          <p class="eyebrow">EXPERIENCE</p>
+          <h2>From design<br />to coordination.</h2>
+          <p>
+            Two contexts. One consistent approach: understand the system,
+            coordinate the constraints and make the work buildable.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="year">2019—2023</span>
+            <div>
+              <h3>Bolivia <small>BO</small></h3>
+              <h4>Design · Construction · Supervision</h4>
+              <p>
+                Instacom S.R.L. — hydrosanitary and fire protection design,
+                hydraulic calculations, construction execution and site
+                supervision.
+              </p>
+              <div class="metric-row">
+                <strong>42<span>+</span></strong
+                ><span>documented projects</span><strong>5</strong
+                ><span>years of experience</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item current">
+            <span class="year">2023 — TODAY</span>
+            <div>
+              <h3>United States <small>US</small></h3>
+              <h4>BIM Modeling · MEP Coordination</h4>
+              <p>
+                Plumbing and Fire Protection modeling, clash resolution,
+                penetrations, riser coordination, field conditions and
+                construction documentation.
+              </p>
+              <div class="tag-row">
+                <span>Revit</span><span>Navisworks</span
+                ><span>Coordination</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="projects-head">
+          <div>
+            <p class="eyebrow">FEATURED PROJECTS</p>
+            <h2>Selected work<br />from Bolivia.</h2>
+          </div>
+          <p>
+            Projects selected to show the range of building types, systems and
+            responsibilities across five years of documented experience.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-large">
+            <img
+              src="project-1.jpg"
+              alt="Fire protection project at Plaza Empresarial Manzana 40"
+            />
+            <div>
+              <span>2019 · CONSTRUCTION</span>
+              <h3>Plaza Empresarial<br />Manzana 40</h3>
+              <p>Automatic sprinklers & hose hydrants</p>
+              <button
+                class="open-case"
+                data-case="Plaza Empresarial Manzana 40"
+                data-detail="Fire protection construction with automatic sprinklers and hose hydrants, delivered with a focus on field execution and system reliability."
+              >
+                View project ↗
+              </button>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="project-3.jpg" alt="Fire protection design project" />
+            <div>
+              <span>2023 · DESIGN + CALCULATION</span>
+              <h3>Edificio Solgard</h3>
+              <p>Hydrosanitary & fire protection design</p>
+              <button
+                class="open-case"
+                data-case="Edificio Solgard"
+                data-detail="Hydrosanitary and fire protection design and calculation for a complex building project."
+              >
+                View project ↗
+              </button>
+            </div>
+          </article>
+          <article class="project-card">
+            <img src="project-5.jpg" alt="Hydrosanitary design project" />
+            <div>
+              <span>2022 · DESIGN</span>
+              <h3>Universidad Católica</h3>
+              <p>Hydrosanitary design & calculation</p>
+              <button
+                class="open-case"
+                data-case="Universidad Católica"
+                data-detail="Hydrosanitary design and hydraulic calculation supporting an institutional project."
+              >
+                View project ↗
+              </button>
+            </div>
+          </article>
+          <article class="project-card project-wide">
+            <div class="project-quote">
+              “The best coordination is the one that makes the field feel
+              simple.”
+            </div>
+            <div>
+              <span>2021—2023 · SELECTED WORK</span>
+              <h3>Commercial · Hospitality · Residential</h3>
+              <p>Explore the complete project record on request.</p>
+              <a class="text-link light-link" href="#contact"
+                >Request project list ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="workflow">
+        <div class="section-heading">
+          <p class="eyebrow">PROJECT WORKFLOW</p>
+          <h2>A practical process<br />for complex work.</h2>
+        </div>
+        <div class="workflow-grid">
+          <article>
+            <span>01</span>
+            <h3>Review</h3>
+            <p>Architectural, structural and MEP backgrounds.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Model</h3>
+            <p>Plumbing and Fire Protection systems in Revit.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Coordinate</h3>
+            <p>Systems aligned with every discipline.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Resolve</h3>
+            <p>Clashes and constructability issues addressed.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Document</h3>
+            <p>Coordinated shop drawings and documents.</p>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>Update</h3>
+            <p>RFIs, ASIs, field conditions and changes.</p>
+          </article>
+        </div>
+      </section>
+      <section class="tools">
+        <div>
+          <p class="eyebrow">SOFTWARE & TECHNICAL SKILLS</p>
+          <h2>Tools in service<br />of the system.</h2>
+        </div>
+        <div class="tool-list">
+          <div><strong>Revit</strong><span>MEP BIM Modeling</span></div>
+          <div>
+            <strong>Navisworks</strong
+            ><span>Multidisciplinary Coordination</span>
+          </div>
+          <div>
+            <strong>AutoCAD</strong><span>Construction Documentation</span>
+          </div>
+          <div>
+            <strong>HydraCAD / AutoSPRINK</strong
+            ><span>Fire Protection Layouts</span>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact-top">
+          <p class="eyebrow">LET'S WORK TOGETHER</p>
+          <span>BASED IN BOLIVIA<br />WORKING INTERNATIONALLY</span>
+        </div>
+        <h2>Ready to make<br />things <em>work?</em></h2>
+        <p>
+          Available for BIM Modeling, Plumbing, Fire Protection and MEP
+          Coordination projects.
+        </p>
+        <div class="contact-links">
+          <button class="contact-button" id="emailButton">
+            danielavc0506@gmail.com <span>↗</span></button
+          ><a
+            class="contact-button"
+            id="whatsappButton"
+            href="https://wa.me/59177019733"
+            target="_blank"
+            rel="noreferrer"
+            >WhatsApp <span>↗</span></a
+          ><a
+            class="contact-button"
+            href="https://www.linkedin.com/in/daniela-villagomez-castro/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn <span>↗</span></a
+          >
+        </div>
+        <footer>
+          <span>© 2026 DANIELA VILLAGOMEZ CASTRO</span
+          ><span>CIVIL ENGINEER / BIM COORDINATOR</span>
+        </footer>
+      </section>
+      +
+    </main>
+    +
+    <dialog id="dialog">
+      <button class="close" aria-label="Close">×</button>
+      <p class="eyebrow">SELECTED PROJECT</p>
+      <h2 id="dialogTitle">Project</h2>
+      <p id="dialogDetail"></p>
+      <a class="button button-dark" href="#contact" id="dialogCta"
+        >Start a conversation ↗</a
+      >
+    </dialog>
+    +
+    <script src="script.js?v=2"></script>
+    +
+  </body>
+  +
 </html>
