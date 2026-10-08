@@ -94,7 +94,7 @@ const translations = {
       "RFIs, ASIs, condiciones de obra y cambios.",
     ],
     toolsTitle: "Herramientas al servicio<br />del sistema.",
-    contactTitle: "¿Lista para hacer<br />que todo <em>funcione?</em>",
+    contactTitle: "¿Listo para hacer<br />que todo <em>funcione?</em>",
     contactDescription: "Disponible para proyectos de modelado BIM, sistemas hidrosanitarios, protección contra incendios y coordinación MEP.",
     contactLocation: "BASE EN BOLIVIA<br />TRABAJANDO INTERNACIONALMENTE",
     dialogLabel: "PROYECTO SELECCIONADO",
