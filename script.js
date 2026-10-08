@@ -11,7 +11,7 @@ const translations = {
     heroTitle: "Systems that<br />work together.",
     heroIntro:
       "Plumbing & Fire Protection Engineer specializing in BIM modeling and multidisciplinary coordination for projects in Bolivia and the United States.",
-    heroButtons: ["View projects <span>↘</span>", "About Daniela <span>↘</span>"],
+    heroButtons: ["View projects <span>↘</span>", "About me <span>↘</span>"],
     expertiseTitle: "Engineering knowledge<br />behind every model.",
     expertise: [
       ["Plumbing", "Systems designed for performance, access and buildability.", ["Domestic water", "Sanitary drainage", "Vent & storm systems", "Gas systems"]],
@@ -60,7 +60,7 @@ const translations = {
     heroTitle: "Sistemas que<br />trabajan juntos.",
     heroIntro:
       "Ingeniera especializada en sistemas hidrosanitarios y protección contra incendios, modelado BIM y coordinación multidisciplinaria para proyectos en Bolivia y Estados Unidos.",
-    heroButtons: ["Ver proyectos <span>↘</span>", "Sobre Daniela <span>↘</span>"],
+    heroButtons: ["Ver proyectos <span>↘</span>", "Sobre mí <span>↘</span>"],
     expertiseTitle: "Conocimiento de ingeniería<br />detrás de cada modelo.",
     expertise: [
       ["Hidrosanitario", "Sistemas diseñados para rendimiento, acceso y construcción.", ["Agua doméstica", "Drenaje sanitario", "Ventilación y pluvial", "Sistemas de gas"]],
